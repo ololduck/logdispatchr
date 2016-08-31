@@ -1,7 +1,7 @@
 Outputs
 =======
 
-There are several outputs avalable, and i will document them in the code and try the autodoc feature
+There are several outputs avalable, and are located in the ``logdispatchr.outputs`` module.
 
 .. automodule:: logdispatchr.outputs
    :members:

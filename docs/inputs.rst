@@ -1,7 +1,7 @@
 Inputs
 ======
 
-There are several inputs avalable, and i will document them in the code and try the autodoc feature
+There are several inputs avalable, all of them are available in the ``logdispatchr.inputs`` module.
 
 .. automodule:: logdispatchr.inputs
    :members:
