@@ -2,7 +2,7 @@
 deploy:
   user: paulollivier
   true:
-    condition: $TOXENV == py27
+    condition: $TOXENV == py35
     repo: paulollivier/logdispatchr
     tags: true
   password:
@@ -22,9 +22,9 @@ deploy:
   provider: pypi
   distributions: sdist bdist_wheel
 env:
-- TOXENV=py35
-- TOXENV=py34
 - TOXENV=py33
+- TOXENV=py34
+- TOXENV=py35
 install: pip install -U tox
 language: python
 python: 3.5
