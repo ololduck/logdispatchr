@@ -1,7 +1,6 @@
 loglevel = "DEBUG"
 mainqueue_max_size = 200
 
-[inputs]
 [inputs.localsyslog]
 key = "local.syslog"
 class = "UDPSyslogInput"
@@ -13,6 +12,17 @@ class = "LogdispatchrUDPInput"
 host = "localhost"
 port = 5140
 
+[inputs.filein]
+class = "TailInput"
+path = "/tmp/hi"
+
 [outputs.console_out]
 class = "ConsolePrinter"
 
+[outputs.fileout]
+class = "FileOutput"
+path = "/tmp/f.log"
+
+[formatters.my_custom_format]
+class = "BaseFormatter"
+format_string = "{time} {key} {message}"
